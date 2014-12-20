@@ -1,0 +1,5 @@
+dumps/*
+!dumps/.placeholder
+out*
+# script to fetch dumps from prod to dev
+fetch-dumps.sh
