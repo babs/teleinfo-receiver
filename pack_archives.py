@@ -16,7 +16,7 @@ def main():
         t = json.load(open(f, 'r'))
         rank = int(t['tramets'] / 50000)
         rank *= 50000
-        currank.update({t['tramets']:t['trame']})
+        currank[t['tramets']] = t['trame']
         if prevrank != None and prevrank != rank and rank > prevrank:
             donerank.append(prevrank)
             print "Rank %d done, compressing..."%(rank)
