@@ -64,8 +64,8 @@ def main():
         #print rank
         #print "%.6f"%t['tramets']
 
-    for rank in cnt:
-        log.info("Rank %d: %d items"%(rank, cnt[rank]) )
+    #for rank in cnt:
+    #    log.info("Rank %d: %d items"%(rank, cnt[rank]) )
     if len(donerank) > 0:
         log.info("Archived ranks: %s."%(", ".join(map(lambda x: str(x), donerank))) )
     
